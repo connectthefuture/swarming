@@ -9,13 +9,13 @@ instructions below.
 
 ### Participating Prerequisites
 
-- A \*nix terminal. If you're on Windows, check out the [PuTTY][] program.
-- Basic familiarity or affinity to a terminal-based editor such as [Emacs][] or
-  [Vim][]
+- A \*nix terminal. If you're on Windows, check out the
+  [PuTTY][http://www.chiark.greenend.org.uk/~sgtatham/putty/] program.
+- Basic familiarity or affinity to a terminal-based editor such as
+  [Emacs][http://www.gnu.org/software/emacs/] or [Vim][http://www.vim.org/]
 - Someone willing to host a swarm coding session.
 
-Connect to a swarm host
-with the following commands\*.
+Connect to a swarm host with the following commands\*.
 
     $ ssh swarm@$HOST_IP
     $ tmux attach swarming
@@ -32,9 +32,10 @@ then prompted for the username later.
 
 #### Software
 
-- [sshd][]
-- [tmux][]
-- A terminal-based $EDITOR of your choice, [Vim][] and [Emacs][] are currently
+- [sshd][http://www.openssh.com/]
+- [tmux][http://tmux.sourceforge.net/]
+- A terminal-based $EDITOR of your choice, [Vim][http://www.vim.org/]
+  and [Emacs][http://www.gnu.org/software/emacs/] (24+) are currently
   supported.
 
 ### Pre-installation
@@ -43,23 +44,20 @@ then prompted for the username later.
   <li>Add a user with username swarm to your machine.
   <p> Suggested command: <code><pre>$ sudo adduser swarm --gecos "" # set password to swarm</pre></code></p>
   </li>
-  <li>Start your ssh daemon after ensuring swarm is accessible via ssh.</li>
-  <li>Start an interactive shell as swarm.
-  <p><code><pre>$ sudo -u swarm -i</pre></code></p>
-  </li>
+  <li>Log in as the swarm user: <kbd>ssh swarm@localhost</kbd></li>
 </ul>
 
 ### Installation 
 *As the User* __swarm__
     $ git clone git://github.com/nuclearsandwich/swarming.git
-    $ swarming/$EDITOR/swarm.sh
+    $ swarming/swarmup.sh
 
 ### Go Swarm!
 
-After bootstrapping [leiningen][] and symlinking the appropriate dotfiles for
-your chosen $EDITOR, the last command will start a tmux session called
-`swarming` as well as print a message that you can share with your swarm on how
-to connect.
+After bootstrapping [leiningen][http://leiningen.org] and symlinking
+the appropriate dotfiles for your chosen `$EDITOR`, the last command
+will start a tmux session called `swarming` as well as print a message
+that you can share with your swarm on how to connect.
 
     ==> Created tmux session
     ==> Bootstrapping Leiningen
