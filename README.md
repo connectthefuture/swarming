@@ -10,9 +10,9 @@ instructions below.
 ### Participating Prerequisites
 
 - A \*nix terminal. If you're on Windows, check out the
-  [PuTTY][http://www.chiark.greenend.org.uk/~sgtatham/putty/] program.
+  [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/) program.
 - Basic familiarity or affinity to a terminal-based editor such as
-  [Emacs][http://www.gnu.org/software/emacs/] or [Vim][http://www.vim.org/]
+  [Emacs](http://www.gnu.org/software/emacs) or [Vim](http://www.vim.org).
 - Someone willing to host a swarm coding session.
 
 Connect to a swarm host with the following commands\*.
@@ -32,10 +32,10 @@ then prompted for the username later.
 
 #### Software
 
-- [sshd][http://www.openssh.com/]
-- [tmux][http://tmux.sourceforge.net/]
-- A terminal-based $EDITOR of your choice, [Vim][http://www.vim.org/]
-  and [Emacs][http://www.gnu.org/software/emacs/] (24+) are currently
+- [sshd](http://www.openssh.com/)
+- [tmux](http://tmux.sourceforge.net/)
+- A terminal-based $EDITOR of your choice, [Vim](http://www.vim.org/)
+  and [Emacs](http://www.gnu.org/software/emacs) (24+) are currently
   supported.
 
 ### Pre-installation
@@ -48,13 +48,15 @@ then prompted for the username later.
 </ul>
 
 ### Installation 
-*As the User* __swarm__
+
+As the User __swarm__:
+
     $ git clone git://github.com/nuclearsandwich/swarming.git
     $ swarming/swarmup.sh
 
 ### Go Swarm!
 
-After bootstrapping [leiningen][http://leiningen.org] and symlinking
+After bootstrapping [leiningen](http://leiningen.org) and symlinking
 the appropriate dotfiles for your chosen `$EDITOR`, the last command
 will start a tmux session called `swarming` as well as print a message
 that you can share with your swarm on how to connect.
@@ -80,10 +82,3 @@ Go, or Racket.
 
 Copyright © 2010-2012 the Seattle Clojure Group
 Released under the Eclipse Public License.
-
-[PuTTY]: 
-[Vim]: 
-[Emacs]: 
-[leiningen]: 
-[tmux]: 
-[sshd]: 
